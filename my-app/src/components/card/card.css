@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.Blockdsd{
+  color: rgb(119, 69, 255);
+  background-color: red;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+body._lock{
+  overflow: hidden; /*недает скролить весь сайт при открытой меню*/
+}
+._container {
+  width: 85%; /* дописал котя */
+  max-width: 1280px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+/* .element-animation {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+} */
+/*----------------------------------------карточка-------*/
+.Card_big{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .new{
+      display: flex;
+  }
+  .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 330px;
+      background-color: rgba(116, 115, 115, 0.103);
+      margin: 5px 5px;
+      transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .card:hover {
+      box-shadow: 0 0 10px #030303;
+      transform: translateY(-5px);
+  }
+  .card__image{
+      max-width: 165px;
+      max-height: 180px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .card__image img{
+      width: 100%;
+  }
+  .card__image:hover img{
+      transform: scale(1.1);
+      transition: 3s;
+  }
+  .card__title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+  }
+  .card__footer{
+      display: flex;
+      flex-direction: row;
+  }
+  .pcs__calc{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;  
+  }
+  .pcs__calc-imput{
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 22px;
+  }
+  .card__pcs{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  }
+  .card__pcs img{
+      width: 100%;
+  }
+  .favorites-cart{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+  .card-footer-wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      align-items: center;
+      justify-content: center;
+  }
+  .flip-btn {
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 5px;
+      margin: 5px 5px;
+      position: relative;
+      color: rgb(0, 0, 0);
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      background: none;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .flip-btn:before, .flip-btn:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      box-sizing: border-box;
+    }
+    .flip-btn:before {
+      bottom: 0;
+      left: 0;
+      border-left: 1px solid rgb(0, 0, 0);
+      border-top: 1px solid rgb(0, 0, 0);
+      transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+    }
+    .flip-btn:after {
+      top: 0;
+      right: 0;
+      border-right: 1px solid rgb(0, 0, 0);
+      border-bottom: 1px solid rgb(3, 3, 3);
+      transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+    }
+    .flip-btn:hover:before, 
+    .flip-btn:hover:after {
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+    }
+    .flip-btn:hover:before {
+      transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+    }
+    .flip-btn:hover:after {
+      transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+    }
+    .flip-btn:hover {
+      background: rgba(126, 126, 126, 0.336);
+    }
+    .card__body{
+      text-align: center;
+      margin: 5px 0;
+    }
+  .card__body img{
+    width: 50%;
+  }
+  /* Контейнер подсказок */
+  .tooltips{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tooltip {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Текст подсказки */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 10px;
+    /* Расположите текст подсказки */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -90px;
+    /* Исчезают в подсказке */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  /* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .tooltip-tex{
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  @media (max-width: 770px){
+    .cart-pcs__calc{
+      width: 90px;
+      min-width: 90px;
+    }
+    .cart-pcs__calc img{
+      width: 100%;
+    }
+  }
+  @media (max-width: 550px){
+  .cart-pcs__calc {
+    width: 80px;
+    min-width: 80px;
+  }
+}
+@media (max-width: 430px){
+.pcs__calc-imput {
+  font-size: 18px;
+}
+}
+  @media (max-width: 393px){
+    .card{
+      width: 142px;
+      height: 310px;
+      margin: 5px 5px;
+    }
+    .card__image{
+      max-width: 165px;
+      max-height: 160px;
+  }
+  .card__title{
+    font-size: 12px;
+    margin-bottom: 4px;
+    width: 141px;
+  }
+  .tooltips{
+    display: flex;
+    flex-direction: row;
+  }
+  .tooltips{
+    display: flex;
+    flex-direction: row;
+  }
+  .card-footer-wrapper{
+    width: 136px;
+  }
+  .pcs__calc{
+    width: 100%;  
+}
+.pcs__calc-imput{
+    font-size: 20px;
+}
+}
+@media (max-width: 375px){
+.cart-pcs__calc {
+  width: 70px;
+  min-width: 70px;
+}
+}
