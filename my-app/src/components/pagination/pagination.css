@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.Blockdsd{
+  color: rgb(119, 69, 255);
+  background-color: red;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+._container {
+  width: 85%; /* дописал котя */
+  max-width: 1280px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+/*----------------------------------------пагинация-------*/
+.module-pagination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .module-pagination a{
+    color: rgb(80, 80, 80);
+  }
+  .pagination_load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .pagination_load:hover{
+    background-color: rgb(253, 240, 255);
+  }
+  .pagination_box{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 150px;
+  }
+  .flex-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .flex-prev:hover{
+    background-color: rgb(253, 240, 255);
+  }
+  .numb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .numb:hover{
+    background-color: rgb(253, 240, 255);
+  }
+  .numb a{
+    color: rgb(71, 71, 71);
+  }
+  .flex-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .flex-next:hover{
+    background-color: rgb(253, 240, 255);
+  }
+  .numb-on{
+    background-color: rgb(253, 240, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }

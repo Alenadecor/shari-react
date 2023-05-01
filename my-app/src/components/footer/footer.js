@@ -21,9 +21,9 @@ function Footer() {
                 <div class="contact">
                     <div class="we">МЫ В СОЦСЕТЯХ:</div>
                     <div class="icons">
-                        <a href="https://instagram.com/kikimora.balloon?igshid=YmMyMTA2M2Y="><img src=".foto/instagram.png" alt="instagram"></img></a>
-                        <a href="https://vk.com/kikimora.balloon"><img src="{% static 'shop/foto/vk.png' %}" alt="vk"></img></a>
-                        <a href="https://wa.me/+79668674747?text=Хочу сделать заказ шаров"><img src="{% static 'shop/foto/whatsapp.png' %}" alt="whatsapp"></img></a>
+                        <a href="https://instagram.com/kikimora.balloon?igshid=YmMyMTA2M2Y="><img src="img/instagram.png" alt="instagram"></img></a>
+                        <a href="https://vk.com/kikimora.balloon"><img src="img/vk.png" alt="vk"></img></a>
+                        <a href="https://wa.me/+79668674747?text=Хочу сделать заказ шаров"><img src="img/whatsapp.png" alt="whatsapp"></img></a>
                     </div>
                 </div>
             </div>

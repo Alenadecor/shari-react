@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.Blockdsd{
+  color: rgb(119, 69, 255);
+  background-color: red;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+._container {
+  width: 85%; /* дописал котя */
+  max-width: 1280px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.card-long{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-mini-gellery{
+    max-width: 1000px;
+    max-height: 800px;
+}
+.card-nav{
+    margin-left: 100px;
+}
+.card-nav-title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.card-nav-text{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 460px;
+}
+.card-nav-price{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px; 
+}
+.card-nav-font{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.card-nav-font img{
+    margin-right: 20px;
+}
+.font-text{
+  font-family: Caveat;
+  font-size: 24px;
+}
+.card-nav-gift{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.card-nav-gift img{
+    margin-right: 20px;
+}
+.card-nav-pcs{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.card-nav-action{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.button-1 {
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 17px 110px 30px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.button-1:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #d4d4d4;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+.button-1:hover:before {
+    transform: translate(4px, 4px);
+}
+
+/*-----------------временная-кнопка-вотсапа-вместо избранного-и-корзины-------*/
+.button-Whatsapp {
+  color: #232323;
+  background: transparent;
+  border: 1px solid #232323;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 17px 20px 30px 39px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+}
+.button-Whatsapp:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  background: #d4d4d4;
+  z-index: -1;
+  transition: .25s ease;
+  transform: translate(0, 0);
+}
+.button-Whatsapp:hover:before {
+  transform: translate(4px, 4px);
+}
+/*-----------------card-long-------ballon--------карта развернутая----*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    }
+    .mySlides-cont{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 500px;
+      max-height: 500px;
+      overflow: hidden;
+    }
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+    .image-min{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80px;
+      max-height: 80px;
+      overflow: hidden;
+    }
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+    /* Container for image text */
+    .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Six columns side by side */
+    .column {
+    float: left;
+    width: 16.66%;
+    }
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+    opacity: 0.6;
+    }
+    .active,
+    .demo:hover {
+    opacity: 1;
+    }
+    @media (max-width: 1030px){
+        .card-nav{
+            margin-left: 50px;
+        }
+        .card-nav-title{
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+        .card-nav-text{
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .card-nav-price{
+            font-size: 24px;
+            margin-bottom: 15px; 
+        }
+        .card-nav-font{
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .card-nav-gift{
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .card-nav-pcs{
+            margin-bottom: 15px;
+        }
+        .card-nav-pcs{
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: 850px){
+        .card-long{
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 770px){
+        .card-nav{
+            margin-left: 15px;
+          }
+          .cart-pcs__calc{
+            width: 90px;
+            min-width: 90px;
+          }
+          .cart-pcs__calc img{
+            width: 100%;
+          }
+      }
+      @media (max-width: 550px){
+        .cart-pcs__calc {
+            width: 80px;
+            min-width: 80px;
+          }
+      }
+      @media (max-width: 430px){
+        .card-nav{
+            margin-left: 0px;
+          }
+          .pcs__calc-imput {
+            font-size: 18px;
+          }
+      }
+      @media (max-width: 375px){
+      .cart-pcs__calc {
+        width: 70px;
+        min-width: 70px;
+      }
+    }
+      @media (max-width: 393px){
+        .tooltips{
+            display: flex;
+            flex-direction: row;
+          }
+          .pcs__calc{
+            width: 100%;  
+        }
+        .pcs__calc-imput{
+            font-size: 20px;
+        }
+      }
+      
+      

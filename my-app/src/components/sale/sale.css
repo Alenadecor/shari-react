@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.Blockdsd{
+  color: rgb(119, 69, 255);
+  background-color: red;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+._container {
+  width: 85%; /* дописал котя */
+  max-width: 1280px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+/*----------------------------------------тайтл доставка и скидки-------*/
+.title_discounts{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  /*----------------------------------------дисконт карточки 3шт-------*/
+  .discounts{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+  }
+  .discounts_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .discounts_card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0), 0 10px 10px rgba(0,0,0,0.22);
+    margin: 10px;
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background-color: rgb(250, 250, 250);
+    padding-left: 25px;
+  }
+  .discounts_card:hover {
+    transform: translateY(-10px);
+  }
+  .discounts_card_title{
+    font-size: 20px;
+  }
+  @media (max-width: 550px){
+    .discounts{
+      height: 280px;
+    }
+    .discounts_card{
+      padding-left: 10px;
+      height: 220px;
+    }
+    .discounts_card_title{
+      font-size: 14px;
+    }
+    .discounts_card_text{
+      font-size: 12px;
+    }
+}
+@media (max-width: 430px){
+.title_discounts {
+    font-size: 20px;
+  }
+  .discounts_card img{
+    width: 40%;
+  }
+  .discounts_card{
+    padding-left: 5px;
+    margin: 5px;
+  }
+}
+@media (max-width: 320px){
+    .discounts_card{
+      height: 200px;
+      margin: 3px;
+    }
+  }
