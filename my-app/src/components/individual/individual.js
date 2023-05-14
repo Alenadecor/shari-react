@@ -7,7 +7,6 @@ function Individual() {
         <div class="individual-text">ИНДИВИДУАЛЬНАЯ НАДПИСЬ<br></br><br></br>НА ШАРЕ И КОРОБКЕ</div>
         <div class="individual-image"><img src="img/pen.png" alt=""></img></div>
       </div>
-
     </div>
   );
 }

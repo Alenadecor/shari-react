@@ -11,7 +11,7 @@ function Card() {
                 <div class="card__image"><img src="img/" alt=""></img></div>
             </a></div>
             <div class="card__body">
-                <a href=""><div class="card__title">шар звезда</div></a>
+                <a href=""><div class="card__title">as</div></a>
                 <div class="card__price">1500 руб.</div>
                 <div class="tooltips">
                     <div class="tooltip"><img src="img/h2o 1.png" alt=""></img>

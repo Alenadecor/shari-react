@@ -15,7 +15,7 @@ function Footer() {
                 </div>
                 <div class="catalog">
                     <div class="head-button">
-                        <a href="/shop" class="border-button">Главная</a>
+                        <a href="home" class="border-button">Главная</a>
                     </div>
                 </div>
                 <div class="contact">
@@ -28,7 +28,7 @@ function Footer() {
                 </div>
             </div>
             <div class="footer__back">
-                <a href="/{{ category.url }}" class="footer-button">вкпнвяк</a>
+                <a href="" class="footer-button">для нее</a>
             </div>
         </div>
       </div>

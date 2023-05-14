@@ -62,7 +62,7 @@ function Header() {
       <div class="wrapper">
           <header class="headera">
               <div class="headera__container">
-                  <a href="/shop" class="headera__logo"><img src="img/logo-kikimora.jpg" alt=""></img></a>
+                <a href="home" class="headera__logo"><img src="img/logo-kikimora.jpg" alt=""></img></a>
                   <div class="header__menu menua">
 
                       <div class="menu__icona">
@@ -71,11 +71,11 @@ function Header() {
 
                       <nav class="menu__bodya">
                           <ul class="menu__lista">
-                              <li><a href="/shop" class="menu__linka">Главная</a></li>
+                              <li><a href="/home" class="menu__linka">Главная</a></li>
 
 
                               <li>
-                                  <a href="/link1" class="menu__linka">наборы
+                                  <a href="catalog" class="menu__linka">наборы
                                   </a>
 
                                   <span class="menu__arrowa"></span>
@@ -87,8 +87,7 @@ function Header() {
                                   
                               </li>
 
-                              <li><a href="#bottom" id="top" class="menu__linka">Акции</a></li>
-                              
+                              <li><a href="sale" class="menu__linka">Акции</a></li>
                               <li><a href="https://wa.me/+79668674747?text=Хочу сделать заказ шаров" class="menu__linka">Мы в WhatsApp</a></li>
                               <li><a href="/favorites" class="menu__linka"><img src=" static 'shop/foto/mask-izbranoe.png' " alt=""></img></a></li>
                               <li><a href="/cart" class="menu__linka"><img src=" static 'shop/foto/Mask-korzina.png' " alt=""></img></a></li>
