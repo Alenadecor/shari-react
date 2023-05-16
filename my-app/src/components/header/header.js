@@ -62,7 +62,7 @@ function Header() {
       <div class="wrapper">
           <header class="headera">
               <div class="headera__container">
-                <a href="home" class="headera__logo"><img src="img/logo-kikimora.jpg" alt=""></img></a>
+                <a href="home" class="headera__logo"><img src="/img/logo-kikimora.jpg" alt=""></img></a>
                   <div class="header__menu menua">
 
                       <div class="menu__icona">
@@ -89,8 +89,8 @@ function Header() {
 
                               <li><a href="sale" class="menu__linka">Акции</a></li>
                               <li><a href="https://wa.me/+79668674747?text=Хочу сделать заказ шаров" class="menu__linka">Мы в WhatsApp</a></li>
-                              <li><a href="/favorites" class="menu__linka"><img src=" static 'shop/foto/mask-izbranoe.png' " alt=""></img></a></li>
-                              <li><a href="/cart" class="menu__linka"><img src=" static 'shop/foto/Mask-korzina.png' " alt=""></img></a></li>
+                              <li><a href="/favorites" class="menu__linka"><img src="/img/mask-izbranoe.png" alt=""></img></a></li>
+                              <li><a href="/cart" class="menu__linka"><img src="/img/Mask-korzina.png" alt=""></img></a></li>
                           </ul>
                       </nav>
                   </div>
@@ -103,11 +103,11 @@ function Header() {
                       <search class="search">
                           <div class="search_form">
                               <input type="text" class="search-input" placeholder="Поиск..."></input>
-                              <button type="submit"><img src=" static 'shop/foto/magnifier 1.png' " alt=""></img></button>
+                              <button type="submit"><img src="/img/magnifier 1.png" alt=""></img></button>
                           </div>
                       </search>
                       <div class="location">
-                          <img src="img/mesto-sosnov-bor 1.png" alt=""></img>
+                          <img src="/img/mesto-sosnov-bor 1.png" alt=""></img>
                           <p>г. Сосновый Бор, Ленинградская обл.</p>
                       </div>
                   </div>

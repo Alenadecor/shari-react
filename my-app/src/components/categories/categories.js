@@ -15,6 +15,8 @@ function Categories() {
     getBalloons();
   }, []);
 
+
+
   return (
     <div className="Categories">
               <div class="Card_big _container">
@@ -22,17 +24,12 @@ function Categories() {
               {balloons && 
                       balloons.map((balloon) => (
 
-                        <><a href={'/product/' + balloon.id}><Card /></a></>
+                        <><a href={'/product/' + balloon.id}><Card name={balloon.name} price={balloon.price} image={balloon.image}/></a></>
                         
 
                       ))}
 
               </div>
-
-
-
-
-
     </div>
   );
 }
