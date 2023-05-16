@@ -7,8 +7,10 @@ function Card(props) {
     <div className="Card">
 
       <div class="Card_big _container">
+              
                       
         <div class="card element-animation">
+            
             <div class="card__header"><a href="">
                 <div class="card__image"><img src={props.image} alt=""></img></div>
             </a></div>
