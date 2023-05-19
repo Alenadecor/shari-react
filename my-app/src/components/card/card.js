@@ -11,11 +11,11 @@ function Card(props) {
                       
         <div class="card element-animation">
             
-            <div class="card__header"><a href="">
+            <div class="card__header"><a href={'/product/' + props.id}>
                 <div class="card__image"><img src={props.image} alt=""></img></div>
             </a></div>
             <div class="card__body">
-                <a href=""><div class="card__title">{props.name}</div></a>
+                <a href={'/product/' + props.id} ><div class="card__title">{props.name}</div></a>
                 <div class="card__price">{props.price}</div>
                 <div class="tooltips">
                     <div class="tooltip"><img src="/img/h2o 1.png" alt=""></img>
@@ -46,7 +46,7 @@ function Card(props) {
                     </div>
                   
                 </div>
-                <a href="" class="flip-btn">Подробно</a>
+                <a href={'/product/' + props.id} class="flip-btn">Подробно</a>
                 <button>купить</button>
             </div> 
         </div>

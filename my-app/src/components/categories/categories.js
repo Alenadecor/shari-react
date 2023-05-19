@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../card/card"
 import './categories.css'; 
+import Product from "../product/product";
 
 function Categories() {
   
@@ -24,8 +25,8 @@ function Categories() {
               {balloons && 
                       balloons.map((balloon) => (
 
-                        <><a href={'/product/' + balloon.id}><Card name={balloon.name} price={balloon.price} image={balloon.image}/></a></>
-                        
+                      <><a href={'/product/' + balloon.id}><Card name={balloon.name} price={balloon.price} image={balloon.image} id={balloon.id}/></a></>
+  
 
                       ))}
 
