@@ -1,12 +1,22 @@
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from 'react-router-dom';
 import Waybox from '../waybox/waybox';
 import './product.css'; 
 
-const Product = (props) => {
-
+const Product = () => {
   return (
     <div>
       Стараница товара 
-      <Waybox/>
+      <Waybox/>ТОвар:
+      {balloons && 
+                      balloons.map((balloon) => (
+                        balloon.id === location.state.link_id
+                        ?(
+                            <><a href={'/product/' + balloon.id}>{balloon.name} {balloon.id}</a></>
+                        )
+                        :null
+
+                      ))}
       <section class="card-long _container">
                   <div class="card-nav">
                   <div class="card-nav-title"><h2>gfjhgh</h2></div>
