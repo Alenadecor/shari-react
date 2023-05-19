@@ -1,11 +1,38 @@
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from 'react-router-dom';
 import Waybox from '../waybox/waybox';
 import './product.css'; 
 
 const Product = () => {
+  
+    const [balloons, setBalloons] = useState();
+    const getBalloons = async () => {
+      let response = await fetch(
+        "https://kikimoraballoon.ru/api/balloons/?format=json",)
+        .then((response) => response.json());
+      setBalloons(response);
+    };
+    useEffect(() => {
+      getBalloons();
+    }, []);
+
+    const location = useLocation();
+    console.log(location.state)
+    // const { link_id } = location.state
+
   return (
     <div>
       Стараница товара 
-      <Waybox/>
+      <Waybox/>ТОвар:
+      {balloons && 
+                      balloons.map((balloon) => (
+                        balloon.id === location.state.link_id
+                        ?(
+                            <><a href={'/product/' + balloon.id}>{balloon.name} {balloon.id}</a></>
+                        )
+                        :null
+
+                      ))}
       <section class="card-long _container">
                   <div class="card-nav">
                   <div class="card-nav-title"><h2>шар 5 сердец</h2></div>

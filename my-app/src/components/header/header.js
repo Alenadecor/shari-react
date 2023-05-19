@@ -1,4 +1,5 @@
 import './header.css'; 
+import React, { useEffect, useState } from "react";
 
 const isMobile = {
     Android: function () {
@@ -55,9 +56,22 @@ if (iconMenu) {
     });
 }
 
-
 function Header() {
-  return (
+
+    const [categories, setCategories] = useState();
+    const getCategories = async () => {
+      let response = await fetch(
+        "https://kikimoraballoon.ru/api/categories/?format=json",)
+        .then((response) => response.json());
+      setCategories(response);
+    };
+    useEffect(() => {
+      getCategories();
+    }, []);
+    console.log(categories)
+
+
+    return (
     <div className="Header">
       <div class="wrapper">
           <header class="headera">
@@ -71,21 +85,38 @@ function Header() {
 
                       <nav class="menu__bodya">
                           <ul class="menu__lista">
-                              <li><a href="/home" class="menu__linka">Главная</a></li>
+                              <li><a href="/home" class="menu__linka">Главная</a></li>                              
+                                    <li>
+                                    <a href="/categories/1" class="menu__linka">Готовые наборы</a>
+                                    <ul class="menu__sub-lista">
 
+                                                    {categories && categories.map((category) => (
+                                                        category.parent === 1
+                                                    ?(<li>
+                                                        <a href={category.id} class="menu__linka">{category.name}</a>
+                                                        <span class="menu__arrowa"></span>
+                                                    </li>)
+                                                    :null
+                                                ))}
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                    <a href="/categories/2" class="menu__linka">Шары поштучно</a>
+                                        <ul class="menu__sub-lista">
 
-                              <li>
-                                  <a href="catalog" class="menu__linka">наборы
-                                  </a>
+                                        {categories && categories.map((category) => (
+                                                        category.parent === 2
+                                                    ?(<li>
+                                                        <a href={category.id} class="menu__linka">{category.name}</a>
+                                                        <span class="menu__arrowa"></span>
+                                                    </li>)
+                                                    :null
+                                                ))}
+                                        </ul>
+                                            
 
-                                  <span class="menu__arrowa"></span>
-
-                                  <ul class="menu__sub-lista">
-                                    
-                                    для девочек
-                                  </ul>
-                                  
-                              </li>
+                                    </li>
 
                               <li><a href="sale" class="menu__linka">Акции</a></li>
                               <li><a href="https://wa.me/+79668674747?text=Хочу сделать заказ шаров" class="menu__linka">Мы в WhatsApp</a></li>

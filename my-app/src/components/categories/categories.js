@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, } from "react-router-dom";
 import Card from "../card/card"
 import './categories.css'; 
 
@@ -24,7 +25,10 @@ function Categories() {
               {balloons && 
                       balloons.map((balloon) => (
 
-                        <><a href={'/product/' + balloon.id}><Card name={balloon.name} price={balloon.price} image={balloon.image}/></a></>
+                        <Link to={"/product/" + balloon.id} state={{ link_id: balloon.id }}>
+                                        <Card name={balloon.name} price={balloon.price} image={balloon.image}/>                
+                        </Link>
+                        // <><a href={'/product/' + balloon.id}><Card name={balloon.name} price={balloon.price} image={balloon.image}/></a></>
                         
 
                       ))}
