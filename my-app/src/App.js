@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />}>
           {/* <Route index element={<div>No page is selected.</div> } /> */}
-          <Route name="product" path='/product/*' element={<Product />} />
+          <Route path='/product/*' element={<Product />} />
           <Route path='/categories/*' element={<Categories />} />
           <Route path='/sale' element={<Sale />} />
           <Route path='/home' element={<Home />} />
